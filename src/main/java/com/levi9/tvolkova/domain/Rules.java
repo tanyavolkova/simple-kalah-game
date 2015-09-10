@@ -40,6 +40,9 @@ public class Rules {
     private void moveStones(Board board, int pitSetId, int pitId) {
         PitSet pitSet = board.getPitSet(pitSetId);
         PitSet opponentPitSet = board.getOpponentPitSet(pitSetId);
+
+        nextTurnPitSetId = opponentPitSet.getId();
+
         Pit pit = pitSet.getPit(pitId);
         int stones = pit.getStones();
         pit.empty();
@@ -48,11 +51,9 @@ public class Rules {
 
         while (stones > 0) {
             stones = moveStonesToOwnPits(pitSet, pitIdStartMoveTo, stones, opponentPitSet);
-            nextTurnPitSetId = pitSetId;
 
             if (stones > 0) {
                 stones = moveStonesToOpponentPits(opponentPitSet, stones);
-                nextTurnPitSetId = opponentPitSet.getId();
             }
             pitIdStartMoveTo = 0;
         }
@@ -111,6 +112,10 @@ public class Rules {
         // the last stone to the own pit
         if (stones == 1 && iterator.hasNext()) {
             pit = iterator.next();
+
+            if (pit.isKalah()) {
+                nextTurnPitSetId = pitSet.getId();
+            }
             if (pit.isEmpty() && pit.isNotKalah()) {
                 Pit kalah = pitSet.getKalah();
                 kalah.addStone();
