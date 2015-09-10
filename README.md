@@ -10,7 +10,7 @@ The main successful scenario is implemented:
 * players registered
 * at the page of each player there is a tip whose turn is now
 * at the page of each player there is a link to get last state of the game - it was supposed that while one player makes his/her turn another player's client polls server for the current state and refreshes when the state is recieved; pressing link Get State is simulation of polling
-* the turn is made by clicking on number link in the table
+* the turn is made by clicking numbers presented as links in the table (if it's your turn and no links in the table then you should (simulate) get state by clicking link Get State)
 
 There is many limitations such as:
 
