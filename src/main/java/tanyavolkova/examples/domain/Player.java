@@ -1,4 +1,4 @@
-package com.levi9.tvolkova.domain;
+package tanyavolkova.examples.domain;
 
 /**
  * @author Tetiana Volkova

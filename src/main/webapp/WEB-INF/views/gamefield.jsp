@@ -1,5 +1,5 @@
-<%--@elvariable id="boardView" type="com.levi9.tvolkova.domain.BoardView"--%>
-<%--@elvariable id="pit" type="com.levi9.tvolkova.domain.Pit"--%>
+<%--@elvariable id="boardView" type="tanyavolkova.examples.domain.BoardView"--%>
+<%--@elvariable id="pit" type="tanyavolkova.examples.domain.Pit"--%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

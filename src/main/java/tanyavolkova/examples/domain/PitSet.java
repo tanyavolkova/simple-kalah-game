@@ -1,7 +1,6 @@
-package com.levi9.tvolkova.domain;
+package tanyavolkova.examples.domain;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**

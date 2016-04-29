@@ -1,9 +1,9 @@
-package com.levi9.tvolkova.controllers;
+package tanyavolkova.examples.controllers;
 
-import com.levi9.tvolkova.domain.BoardView;
-import com.levi9.tvolkova.domain.Game;
-import com.levi9.tvolkova.domain.GameManager;
-import com.levi9.tvolkova.domain.Player;
+import tanyavolkova.examples.domain.BoardView;
+import tanyavolkova.examples.domain.Game;
+import tanyavolkova.examples.domain.GameManager;
+import tanyavolkova.examples.domain.Player;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

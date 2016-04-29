@@ -1,6 +1,6 @@
-package com.levi9.tvolkova.controllers;
+package tanyavolkova.examples.controllers;
 
-import com.levi9.tvolkova.domain.Player;
+import tanyavolkova.examples.domain.Player;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

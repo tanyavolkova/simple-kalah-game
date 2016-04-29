@@ -1,4 +1,4 @@
-package com.levi9.tvolkova.domain;
+package tanyavolkova.examples.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
